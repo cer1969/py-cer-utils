@@ -1,0 +1,10 @@
+
+syntax: glob
+*.pyc
+*.tmp_*
+.project
+.pydevproject
+.settings\*.*
+*.tpl.py
+temp\*.log
+Thumbs.db
