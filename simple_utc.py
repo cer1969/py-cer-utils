@@ -3,6 +3,12 @@
 from datetime import datetime, timedelta, tzinfo
 
 #---------------------------------------------------------------------------------------------------
+# Permite guardar con d.strftime(STR_FORMATO) y recuperar con datetime.strptime(txt, STR_FORMATO)
+
+STR_FORMAT = "%Y-%m-%d %H:%M:%S.%f %z"
+
+#---------------------------------------------------------------------------------------------------
+
 
 class SimpleUTC(tzinfo):
     def __init__(self, hours):
