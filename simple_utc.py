@@ -70,7 +70,7 @@ def NT(txt_time):
 
 def fix_date(dt):
     """ Corrección de zona horaria para fechas en Chile"""
-    if dt < NT("01-01-2005") or dt > NT("13-05-2017"):
+    if dt < NT("01-01-2005") or dt > NT("12-08-2017"):
         raise AttributeError("Rango de fecha no verificado:" + to_str(dt))
     
     if NT("13-03-2005") <= dt < NT("09-10-2005"): return dt.replace(tzinfo=UTC(-4))
@@ -84,6 +84,6 @@ def fix_date(dt):
     if NT("28-04-2013") <= dt < NT("08-09-2013"): return dt.replace(tzinfo=UTC(-4))
     if NT("27-04-2014") <= dt < NT("07-09-2014"): return dt.replace(tzinfo=UTC(-4))
     if NT("15-05-2016") <= dt < NT("14-08-2016"): return dt.replace(tzinfo=UTC(-4))
-    if NT("14-05-2017") <= dt < NT("12-08-2017"): return dt.replace(tzinfo=UTC(-4))
+    if NT("14-05-2017") <= dt < NT("13-08-2017"): return dt.replace(tzinfo=UTC(-4))
     
     return dt.replace(tzinfo=UTC(-3))
