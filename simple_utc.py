@@ -74,7 +74,7 @@ def fix_date(dt):
         raise AttributeError("Rango de fecha no verificado:" + to_str(dt))
     
     if NT("13-03-2005") <= dt < NT("09-10-2005"): return dt.replace(tzinfo=UTC(-4))
-    if NT("12-03-2006") <= dt < NT("08-10-2006"): return dt.replace(tzinfo=UTC(-4))
+    if NT("12-03-2006") <= dt < NT("15-10-2006"): return dt.replace(tzinfo=UTC(-4))
     if NT("11-03-2007") <= dt < NT("14-10-2007"): return dt.replace(tzinfo=UTC(-4))    
     if NT("30-03-2008") <= dt < NT("12-10-2008"): return dt.replace(tzinfo=UTC(-4))
     if NT("08-03-2009") <= dt < NT("11-10-2009"): return dt.replace(tzinfo=UTC(-4))
